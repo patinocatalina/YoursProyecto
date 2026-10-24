@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yours — Estética y bienestar. Tres sucursales. Sacá tu turno online en minutos.">
+  <title>Yours — Estética y bienestar</title>
+
+  <!-- Tipografías: una gruesa para títulos grandes, una serif itálica para detalles y una sans para textos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playfair+Display:ital,wght@0,500;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== MENÚ (píldora flotante) ===== -->
+  <header class="nav">
+    <a href="#" class="logo">yours</a>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#tienda">Tienda</a>
+      <a href="#sucursales">Sucursales</a>
+      <a href="#opiniones">Opiniones</a>
+    </nav>
+    <div class="nav-acciones">
+      <button type="button" class="boton-carrito" id="abrir-carrito" aria-label="Ver carrito">
+        Carrito <span class="contador" id="contador-carrito">0</span>
+      </button>
+      <a href="#turnos" class="boton boton-chico">Sacar turno</a>
+    </div>
+  </header>
+
+  <!-- ===== PORTADA (HERO) ===== -->
+  <!-- Poné tus fotos en la carpeta img con estos nombres: hero-1.jpg y hero-2.jpg -->
+  <section class="hero">
+    <div class="hero-fotos">
+      <div class="foto foto-1"></div>
+      <div class="foto foto-2"></div>
+    </div>
+    <div class="hero-texto">
+      <p class="etiqueta">Estética &amp; bienestar · 3 sucursales</p>
+      <p class="hero-bajada">Tratamientos faciales, corporales y de belleza pensados para que salgas sintiéndote vos, pero mejor.</p>
+      <a href="#turnos" class="boton">Reservar turno</a>
+    </div>
+    <h1 class="titulo-gigante">Tu momento <em>de</em> brillar.</h1>
+  </section>
+
+  <!-- ===== CINTA QUE SE MUEVE ===== -->
+  <div class="cinta" aria-hidden="true">
+    <div class="cinta-texto">
+      <span>limpieza facial ✦ cejas ✦ pestañas ✦ manicura ✦ masajes ✦ depilación láser ✦ skincare ✦ velas ✦</span>
+      <span>limpieza facial ✦ cejas ✦ pestañas ✦ manicura ✦ masajes ✦ depilación láser ✦ skincare ✦ velas ✦</span>
+    </div>
+  </div>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section class="nosotros">
+    <span class="brillo brillo-1">✦</span>
+    <span class="brillo brillo-2">✦</span>
+    <p class="marca-brillante" aria-hidden="true">yours</p>
+    <div class="nosotros-texto">
+      <p class="etiqueta">Quiénes somos</p>
+      <p>Nacimos con una idea simple: cuidarte no tiene por qué ser complicado. En nuestras tres sucursales te recibe un equipo de profesionales que escucha lo que necesitás y arma un tratamiento a tu medida.</p>
+      <p class="firma"><em>Belleza real, sin vueltas.</em></p>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <!-- Las tarjetas se generan desde script.js (lista "servicios") -->
+  <section class="seccion fondo-chocolate" id="servicios">
+    <h2 class="titulo-bloque">Nuestros <em>servicios</em></h2>
+    <p class="intro">Elegí lo que te hace bien. Duración y precio de cada tratamiento.</p>
+    <div class="servicios" id="lista-servicios"></div>
+  </section>
+
+  <!-- ===== TIENDA ===== -->
+  <!-- Los productos se generan desde datos.js (lista "productos") -->
+  <section class="seccion" id="tienda">
+    <h2 class="titulo-bloque">Autocuidado <em>en casa</em></h2>
+    <p class="intro">Sumá productos a tu carrito y te los entregamos en tu turno. Se pagan junto con el servicio.</p>
+    <div class="filtros" id="filtros-tienda"></div>
+    <div class="productos" id="lista-productos"></div>
+  </section>
+
+  <!-- ===== SUCURSALES ===== -->
+  <!-- También se generan desde script.js (lista "sucursales") -->
+  <section class="seccion fondo-rosa" id="sucursales">
+    <h2 class="titulo-bloque">Tres <em>sucursales</em></h2>
+    <p class="intro">Siempre hay un Yours cerca tuyo.</p>
+    <div class="sucursales" id="lista-sucursales"></div>
+  </section>
+
+  <!-- ===== OPINIONES ===== -->
+  <!-- Reemplazá estos textos de ejemplo por opiniones reales de clientas -->
+  <section class="seccion" id="opiniones">
+    <div class="opiniones">
+      <div class="opinion opinion-titulo">
+        <h2 class="titulo-bloque">Lo dicen <em>ellas</em></h2>
+      </div>
+      <blockquote class="opinion">
+        <p class="estrellas">★★★★★</p>
+        <p class="opinion-frase">"Salí con la piel brillando"</p>
+        <p>La limpieza facial fue un mimo total. Me explicaron todo y me recomendaron qué usar en casa.</p>
+        <cite>— Sofía M.</cite>
+      </blockquote>
+      <blockquote class="opinion opinion-rosa">
+        <p class="estrellas">★★★★★</p>
+        <p class="opinion-frase">"Las mejores cejas de mi vida"</p>
+        <p>Por fin alguien que entendió la forma de mi cara. Ya saqué turno para el mes que viene.</p>
+        <cite>— Camila R.</cite>
+      </blockquote>
+      <blockquote class="opinion opinion-chocolate">
+        <p class="estrellas">★★★★★</p>
+        <p class="opinion-frase">"Reservar es facilísimo"</p>
+        <p>Saqué turno desde el celular en un minuto y me quedaba a dos cuadras de casa.</p>
+        <cite>— Lucía P.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== TURNOS ===== -->
+  <section class="seccion fondo-chocolate" id="turnos">
+    <h2 class="titulo-bloque">Sacá tu <em>turno</em></h2>
+    <p class="intro">Cinco pasos y listo. La confirmación te llega por WhatsApp.</p>
+
+    <form class="reserva" id="form-reserva" novalidate>
+
+      <!-- Paso 1: sucursal -->
+      <fieldset class="paso">
+        <legend><span class="numero">1</span> Elegí la sucursal</legend>
+        <div class="opciones" id="opciones-sucursal"></div>
+      </fieldset>
+
+      <!-- Paso 2: servicio -->
+      <fieldset class="paso">
+        <legend><span class="numero">2</span> Elegí el servicio</legend>
+        <select id="servicio" required>
+          <option value="">Seleccioná un servicio</option>
+        </select>
+      </fieldset>
+
+      <!-- Paso 3: profesional (se arma desde script.js según sucursal y servicio) -->
+      <fieldset class="paso">
+        <legend><span class="numero">3</span> Elegí profesional</legend>
+        <p class="ayuda" id="ayuda-profesional">Primero elegí sucursal y servicio.</p>
+        <div class="opciones" id="opciones-profesional"></div>
+      </fieldset>
+
+      <!-- Paso 4: día y horario -->
+      <fieldset class="paso">
+        <legend><span class="numero">4</span> Elegí día y horario</legend>
+        <input type="date" id="fecha" required>
+        <p class="ayuda" id="ayuda-horarios">Primero elegí sucursal, servicio y día.</p>
+        <div class="horarios" id="horarios"></div>
+      </fieldset>
+
+      <!-- Paso 5: datos -->
+      <fieldset class="paso">
+        <legend><span class="numero">5</span> Tus datos</legend>
+        <div class="campos">
+          <label>Nombre y apellido
+            <input type="text" id="nombre" required autocomplete="name">
+          </label>
+          <label>WhatsApp (sin 0 ni 15)
+            <input type="tel" id="telefono" required autocomplete="tel" placeholder="11 2345 6789">
+          </label>
+          <label>Email
+            <input type="email" id="email" autocomplete="email">
+          </label>
+          <label class="campo-ancho">Comentarios (opcional)
+            <textarea id="comentarios" rows="2"></textarea>
+          </label>
+        </div>
+      </fieldset>
+
+      <!-- Resumen de lo que se paga en el turno (servicio + productos del carrito) -->
+      <div class="resumen" id="resumen-pago" aria-live="polite"></div>
+
+      <p class="error" id="error" role="alert"></p>
+      <button type="submit" class="boton boton-rosa" id="boton-confirmar">Confirmar turno</button>
+    </form>
+
+    <!-- Mensaje que aparece al confirmar -->
+    <div class="confirmacion oculto" id="confirmacion" role="status">
+      <h3>¡Turno <em>reservado!</em></h3>
+      <p id="detalle-turno"></p>
+      <p class="total-turno" id="total-turno"></p>
+      <p class="estado-whatsapp" id="estado-whatsapp"></p>
+      <a href="#" class="boton" id="link-whatsapp" target="_blank" rel="noopener">Avisar por WhatsApp</a>
+      <button type="button" class="link" id="otro-turno">Sacar otro turno</button>
+    </div>
+  </section>
+
+  <!-- ===== CARRITO (panel lateral) ===== -->
+  <div class="carrito-fondo oculto" id="carrito-fondo"></div>
+  <aside class="carrito oculto" id="carrito" aria-label="Carrito">
+    <div class="carrito-cabeza">
+      <h3>Tu <em>carrito</em></h3>
+      <button type="button" class="cerrar" id="cerrar-carrito" aria-label="Cerrar carrito">✕</button>
+    </div>
+
+    <div id="carrito-items"></div>
+
+    <div id="carrito-acciones">
+      <p class="carrito-total" id="carrito-total"></p>
+      <p class="ayuda">Los productos se entregan y se pagan en tu turno.</p>
+      <a href="#turnos" class="boton boton-rosa" id="carrito-turno-nuevo">Sumar a un turno nuevo</a>
+
+      <!-- Para sumarlos a un turno que ya está reservado -->
+      <div class="turno-existente">
+        <p><strong>¿Ya tenés turno?</strong> Buscalo con tu WhatsApp y te los llevás ese día.</p>
+        <div class="buscar-turno">
+          <input type="tel" id="buscar-telefono" placeholder="11 2345 6789" autocomplete="tel">
+          <button type="button" class="boton boton-chico" id="buscar-turnos">Buscar</button>
+        </div>
+        <div id="mis-turnos"></div>
+      </div>
+    </div>
+
+    <p class="carrito-mensaje" id="carrito-mensaje" role="status"></p>
+  </aside>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="footer">
+    <p class="footer-frase">nos vemos <em>pronto</em> ✦</p>
+    <div class="footer-columnas">
+      <div>
+        <a href="#" class="logo">yours</a>
+        <p>Estética y bienestar.</p>
+      </div>
+      <div>
+        <h5>Turnos</h5>
+        <a href="#turnos">Reservar online</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#sucursales">Horarios</a>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <a href="#">hola@yours.com</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="datos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
